@@ -1,0 +1,82 @@
+$dark-background: #1C2128;
+$text-color: #ADBAC7;
+$secondary-color: #444C56;
+$third-color: #2D333B;
+
+body {
+    margin: 0;
+    background-color: $dark-background;
+    color: $text-color;
+}
+
+#element::-webkit-scrollbar {
+    display: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    color: $text-color
+}
+
+textarea.form-control {
+    height: 350px;
+    width: 100%;
+    background-color: $dark-background !important;
+    border-color: $secondary-color;
+    color: $text-color !important;
+    
+}
+
+
+input.form-control {
+    background-color: $dark-background !important;
+    border-color: $secondary-color;
+    color: $text-color !important;
+    margin: 20px auto 20px auto;
+
+}
+
+.main {
+    padding: 10px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    background-color: $third-color !important;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+.btn-block {
+    width: 100%
+}
+
+hr {
+    background-color: $secondary-color;
+}
+
+.btn-success {
+    font-weight: bold !important;
+}
+
+li {
+    color: $secondary-color;
+}

@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Search
+{% endblock %}
+
+{% block body %}
+    <h1>Search</h1>
+    <hr>
+    <h3>List of similar Entries</h2>
+        {% for name in entry %}
+            <li><a href="{% url 'entry' name%}">{{name}}</a></li>
+            {% empty %}
+
+            <a style="color: red;">Sorry but there are no Wiki pages that match what your looking for!</a>
+
+        {% endfor %}
+{% endblock %}
